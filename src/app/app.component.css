@@ -1,0 +1,49 @@
+mat-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+mat-toolbar span {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+mat-toolbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+mat-toolbar a:hover {
+    text-decoration: underline;
+}
+
+router-outlet {
+    display: block;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    mat-toolbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    mat-toolbar a {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    router-outlet {
+        padding: 10px;
+    }
+}
